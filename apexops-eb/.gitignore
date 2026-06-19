@@ -1,0 +1,18 @@
+# environment and secrets
+.env
+*.env
+*.pem
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+*.swp
+
+# deployment artifacts
+*.zip
+ghost-userdata.sh
+*-details.txt
