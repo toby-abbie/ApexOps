@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      php: 8.1
+      php: 8.2
     commands:
       - echo Installing dependencies...
 
@@ -11,7 +11,7 @@ phases:
     commands:
       - echo Pre-build started on `date`
       - echo Validating PHP files...
-      - find . -name "*.php" -exec php -l {} \; | grep -v "No syntax errors" || true
+      find . -name "*.php" -exec php -l {} \; || exit 1
 
   build:
     commands:
